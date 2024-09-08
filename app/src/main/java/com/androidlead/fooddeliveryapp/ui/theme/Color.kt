@@ -1,5 +1,6 @@
 package com.androidlead.fooddeliveryapp.ui.theme
 
+import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
@@ -9,6 +10,7 @@ val Yellow = Color(0xFFF7EDE2)
 val YellowLight = Color(0xFFFFFFF2)
 val Dark = Color(0xFF3D405B)
 
+@Immutable
 data class AppColors(
     val background: Color,
     val onBackground: Color,

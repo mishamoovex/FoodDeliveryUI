@@ -48,7 +48,7 @@ fun ProductPreviewSection(
 }
 
 @Composable
-fun ProductBackground(
+private fun ProductBackground(
     modifier: Modifier = Modifier
 ) {
     Box(
@@ -62,7 +62,7 @@ fun ProductBackground(
 }
 
 @Composable
-fun Content(
+private fun Content(
     modifier: Modifier = Modifier,
     state: ProductPreviewState
 ) {
@@ -103,7 +103,7 @@ fun Content(
 }
 
 @Composable
-fun ActionBar(
+private fun ActionBar(
     modifier: Modifier = Modifier,
     headline: String
 ) {
@@ -122,7 +122,7 @@ fun ActionBar(
 }
 
 @Composable
-fun CloseButton(
+private fun CloseButton(
     modifier: Modifier = Modifier
 ) {
     Surface(

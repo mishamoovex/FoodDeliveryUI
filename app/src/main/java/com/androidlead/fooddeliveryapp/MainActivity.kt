@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.androidlead.fooddeliveryapp.ui.screen.ProductDetailsScreen
 import com.androidlead.fooddeliveryapp.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,6 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
+                ProductDetailsScreen()
             }
         }
     }

@@ -14,14 +14,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.androidlead.fooddeliveryapp.data.ProductHighlight
+import com.androidlead.fooddeliveryapp.data.ProductHighlightState
 import com.androidlead.fooddeliveryapp.data.ProductHighlightType
 import com.androidlead.fooddeliveryapp.ui.theme.AppTheme
 
 @Composable
 fun ProductHighlights(
     modifier: Modifier = Modifier,
-    highlights: List<ProductHighlight>
+    highlights: List<ProductHighlightState>
 ) {
     Column(
         modifier = modifier,

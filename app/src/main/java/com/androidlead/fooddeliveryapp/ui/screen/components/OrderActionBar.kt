@@ -89,7 +89,7 @@ private fun Selector(
                 iconRes = R.drawable.ic_minus,
                 containerColor = AppTheme.colors.actionSurface,
                 contentColor = AppTheme.colors.onActionSurface,
-                onClicked = onAddItemClicked
+                onClicked = onRemoveItemClicked
             )
             Text(
                 text = amount.toString(),
@@ -100,7 +100,7 @@ private fun Selector(
                 iconRes = R.drawable.ic_plus,
                 containerColor = AppTheme.colors.secondarySurface,
                 contentColor = AppTheme.colors.onSecondarySurface,
-                onClicked = onRemoveItemClicked
+                onClicked = onAddItemClicked
             )
         }
     }
@@ -115,15 +115,15 @@ private fun SelectorButton(
     onClicked: () -> Unit
 ) {
     Surface(
-        modifier = modifier
-            .size(24.dp)
-            .clickable(onClick = onClicked),
+        modifier = modifier.size(24.dp),
         shape = CircleShape,
         color = containerColor,
         contentColor = contentColor
     ) {
         Box(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier
+                .fillMaxSize()
+                .clickable(onClick = onClicked),
             contentAlignment = Alignment.Center
         ) {
             Icon(
